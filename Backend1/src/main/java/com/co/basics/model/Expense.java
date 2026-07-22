@@ -1,16 +1,16 @@
-package com.co.basics;
+package com.co.basics.model;
 
-public class Expenses {
+public class Expense {
     private String description;
     private double amount;
-    static int id = 0;
-    Expenses(String description, double amount){
+    private int id = 0;
+    public Expense(String description, double amount){
         this.description = description;
         this.amount = amount;
         id++;
     }
 
-    public static int getId() {
+    public int getId() {
         return id;
     }
 
